@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Brief History of Psychological Perspectives | Timeline</title>
+        <meta name="author" content="Krzystof Emmanuel P. Autencio">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <style>
+            * {
+                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #fff5de;
+                border: solid;
+                border-width: 3px;
+                padding-left: 3%;
+                padding-right: 3%;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 3em;
+                background-color: black;
+                color: #fff5de;
+                padding: 10px;;
+            }
+
+            section {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto;
+                column-gap: 7px;
+                background-color: gray;
+            }
+
+            section > div {
+                background-color: #fff5de;
+                padding: 20px;
+                vertical-align: middle;
+            }
+
+            .slide {
+                width: 35vw;
+                height: 35vw;
+                max-height: 400px;
+                max-width: 400px;
+                
+                margin: auto;
+                display: none;
+            }
+
+            h2 {
+                font-size: 5vw;
+                text-align: center;
+            }
+
+            .year {
+                font-size: 4em;
+                margin: 0;
+                background-color: #b03434;
+                color: whitesmoke;
+            
+            }
+
+            ul {
+                margin-top: auto;
+                margin-bottom: auto;
+                padding-left: 15px;
+            }
+
+            .description {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            hr {
+                margin-top: 0;
+                margin-bottom: 0;
+                width: 30%;
+            }
+
+            .name {
+                margin: 10px;
+            }
+
+            .section-name {
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-size: 3em;
+                text-align: center;
+                margin: 0;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                color: white;
+            }
+
+            .early-first {
+                padding-top: 70px;
+                
+            }
+
+            .slideshow_container {
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            .visible {
+                display: block;
+                animation: appear 1.5s ease-in;
+            }
+
+            .sources-button {
+                width: 35vw;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: darkgrey;
+                letter-spacing: 4px;
+                color:  white;
+                border:none;
+                border-width: 1px;
+                max-height: 400px;
+                max-width: 400px;
+            }
+
+            .sources-button:focus {
+                outline: none;
+            }
+
+            .sources {
+                max-height: 0px;
+                overflow: hidden;
+                width: 35vw;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 400px;
+            }
+
+            .show {
+                animation: grow 0.5s ease-in;
+                max-height: 200px;
+            }
+            
+            img {
+                object-fit: cover;
+            }
+
+            footer {
+                text-align: center;
+                padding: 20px;
+            }
+
+            #quiz-link {
+                font-size: 3em;
+                text-decoration: none;
+                color: white;
+                background-color: black;
+                padding: 10px;
+            }
+
+            a {
+                color: black;
+            }
+
+            #terminal {
+                background-color: gray;
+                height: 5px;
+                width: 40%;
+                margin: auto;
+            }
+
+            @keyframes grow {
+                from {
+                    max-height: 0px;
+                }
+                to {
+                    max-height: 100px;
+                }
+            }
+
+            @keyframes appear {
+                from {
+                    opacity: 0.4;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>A Brief History of Psychological Perspectives</h1>
+        </header>
+        
+        <article>
+            <section id="early">
+                <h3 class="section-name">Early</h3>
+                <div> 
+                    <h2 class="name">Structuralism</h2>
+                    <div class="description">
+                        <ul>
+                            <li>Developed by Wilhelm Wundt and his student Edward Bradford Titchener.</li>
+                            <li>Wundt created the foundation on which Titchener expanded.</li>
+                            <li>Focused on breaking down mental processes into the most basic components. Researchers tried to understand the basic elements of consciousness using a method known as introspection.</li>
+                            <li>They figured if the chemist and physicist can break down matter into various elements, pyschologist can also do so for the mind.</li>
+                            <li>Short-lived due to subjectivity involving introspection. People simply have varying ways of perceiving things. For example, my tolerance for vinegar is very high, but others may not.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="year">1873</h2>
+                    <div class="slideshow_container">            
+                        <img class="slide" src="images/Wilhelm Wundt.jpg" title="Wilhelm Wundt">
+                        <img class="slide" src="images/Edward Titchener.jpg" title="Edward Titchener">
+                    </div>
+                    <button class="sources-button" onclick="toggleSources(this.nextElementSibling)">Sources</button>
+                    <ol class="sources">
+                        <li><a href="https://courses.lumenlearning.com/psychology2x4master/chapter/history-of-psychology/#:~:text=Principles%20of%20Physiological%20Psychology"
+                            target="_blank">History of Psychology | Principles of Psychology</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h2 class="year">1890</h2>
+                    <div class="slideshow_container">
+                        <img class="slide" src="images/William James.jpg" title="William James"/>
+                    </div>
+                    <button class="sources-button" onclick="toggleSources(this.nextElementSibling)">Sources</button>
+                    <ol class="sources">
+                        <li><a href="https://www.britannica.com/biography/William-James/Interest-in-psychology#ref154941#:~:text=The%20Principles%20of%20Psychology"
+                            target="_blank">William James - Interest in psychology | Britanica</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h2 class="name">Functionalism</h2>
+                    <div class="description">
+                        <ul>
+                            <li>William James was one of the founders of functionalism.</li>
+                            <li>Formed as a reaction to structuralism. William James believed that it was not yet possible to study the elements of consciousness.</li>
+                            <li>Rather than focusing on the elements or structure of consciousness, functionalists focused on the function/purpose of consciousness and behavior.</li>
+                            <li>Inspired by Charles Darwin’s theory of natural selection which states that adaptive behaviors are conserved throughout the evolutionary process.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div> 
+                    <h2 class="name">Behaviorism (early)</h2>
+                    <div class="description">
+                        <ul>
+                            <li>Pioneered by Ivan Pavlov and John Watson.</li>
+                            <li>Focused on the observable behavior including observable stimuli and responses.</li>
+                            <li>While Wundt and James were concerned with understanding conscious experience, Watson thought that the study of consciousness was flawed. Because he believed that objective analysis of the mind was impossible, Watson preferred to focus directly on observable behavior and try to bring that behavior under control. Watson was a major proponent of shifting the focus of psychology from the mind to behavior, and this approach of observing and controlling behavior came to be known as behaviorism.</li>
+                            <li>Behaviorism is largely responsible for establishing psychology as a scientific discipline through its objective methods and especially experimentation.</li>
+                            <li>Behaviorism dominated experimental psychology for several decades, and its influence can still be felt today.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="year">1897</h2>
+                    <div class="slideshow_container">            
+                        <img class="slide" src="images/Ivan Pavlov.jpg" title="Ivan Pavlov">
+                        <img class="slide" src="images/John Watson.jpg" title="John Watson">
+                    </div>
+                    <button class="sources-button" onclick="toggleSources(this.nextElementSibling)">Sources</button>
+                    <ol class="sources">
+                        <li><a href="https://www.simplypsychology.org/behaviorism.html#:~:text=published%20the%20results%20of%20an%20experiment%20on%20conditioning"
+                            target="_blank">Behaviorism | Simply Psychology</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h2 class="year">1899</h2>
+                    <div class="slideshow_container">
+                        <img class="slide" src="images/Sigmund Freud.jpg" title="Sigmund Freud"/>
+                    </div>
+                    <button class="sources-button" onclick="toggleSources(this.nextElementSibling)">Sources</button>
+                    <ol class="sources">
+                        <li><a href="https://en.wikipedia.org/wiki/The_Interpretation_of_Dreams"
+                            target="_blank">The Interpretation of Dreams - Wikipedia</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h2 class="name">Psychoanalysis</h2>
+                    <div class="description">
+                        <ul>
+                            <li>Founded by Sigmund Freud.</li>
+                            <li>Focuses on the role of a person’s unconscious, as well as early childhood experiences, and sexuality.</li>
+                            <li>He witnessed his colleague Josef Breuer treat a patient with a new talking cure called free association. Basically, you just let the patient talk about their symptoms. The more the patient talked and pulled up traumatic memories, the more his symptoms were reduced. This technique became the basis for psychoanalysis.</li>
+                            <li>While other early perspectives and theories of psychology either fell away or evolved into something else, psychoanalysis remains an important concept and practice today.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div> 
+                    <h2 class="name">Gestalt Psychology</h2>
+                    <div class="description">
+                        <ul>
+                            <li>One of the founders is Max Wertheimer.</li>
+                            <li>The word Gestalt roughly translates to “whole.”</li>
+                            <li>Holds that psychological events such as perceiving and sensing could not be broken down into smaller elements and still be properly understood.</li>
+                            <li>For example, a song may be made up of individual notes played by different instruments, but the real nature of the song is perceived in the combinations of these notes as they form the melody, rhythm, and harmony. In many ways, this particular perspective would have directly contradicted structuralism.</li>
+                            <li>Rejects the structuralist idea that experience can be broken down into individual elements.
+                                It also rejects the behaviorist idea that only observable behavior is important.
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="year">1912</h2>
+                    <div class="slideshow_container">            
+                        <img class="slide" src="images/Max Wertheimer.jpg" title="Max Wertheimer">
+                    </div>
+                    <button class="sources-button" onclick="toggleSources(this.nextElementSibling)">Sources</button>
+                    <ol class="sources">
+                        <li><a href="https://www2.southeastern.edu/Academics/Faculty/mrossano/hist%20of%20psych/powerpoints/Chapter%2014.pptx#:~:text=His%201912%20paper%20%E2%80%9CExperimental%20studies,of%20the%20Gestalt%20Psychology%20movement.&text=But%20Wertheimer%20showed%20that%20movement,simultaneously%20in%20two%20different%20directions."
+                            target="_blank">Experimental Studies of the Perception of Movement</a></li>
+                    </ol>
+                </div>
+            </section>
+            <section id="modern">
+                <h3 class="section-name">Modern</h3>
+                <div>
+                    <h2 class="year">1913</h2>
+                    <div class="slideshow_container">
+                        <img class="slide" src="images/Carl Jung.jpg" title="Carl Jung"/>
+                        <img class="slide" src="images/Melanie Klein.jpg" title="Melanie Klein"/>
+                        <img class="slide" src="images/Alfred Adler.jpg" title="Alfred Adler"/>
+                    </div>
+                    <button class="sources-button" onclick="toggleSources(this.nextElementSibling)">Sources</button>
+                    <ol class="sources">
+                        <li><a href="https://www.simplypsychology.org/carl-jung.html"
+                            target="_blank">Carl Jung | Simply Psychology</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h2 class="name">Psychodynamics</h2>
+                    <div class="description">
+                        <ul>
+                            <li>Pioneered by Freud’s followers such as Car Jung, Melanie Klein, and Alfred Adler.</li>
+                            <li>A more developed version of the psychoanalytical perspective.</li>
+                            <li>Less emphasis on sex and sexual motivation, and more on the development of a sense of self and the discovery of other motivations behind a person’s behavior.</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="name">Cognitive Perspective</h2>
+                    <div class="description">
+                        <ul>
+                            <li>Proponents include Jean Piaget and Noam Chomsky.</li>
+                            <li>Focuses on higher mental processes such as learning, problem solving, and memory.</li>
+                            <li>The emphasis of psychology shifted away from the study of conditioned behavior and psychoanalytical notions about the study of the mind, towards the understanding of human information processing, using strict and rigorous laboratory investigation.</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="year">1925</h2>
+                    <div class="slideshow_container">
+                        <img class="slide" src="images/Jean Piaget.jpg" title="Jean Piaget"/>
+                        <img class="slide" src="images/Noam Chomsky.jpg" title="Noam Chomsky">
+                    </div>
+                    <button class="sources-button" onclick="toggleSources(this.nextElementSibling)">Sources</button>
+                    <ol class="sources">
+                        <li><a href="https://www.simplypsychology.org/cognitive.html#:~:text=The%20Mentality%20of%20Apes"
+                            target="_blank">Cognitive Approach | Simply Psychology</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h2 class="year">1934</h2>
+                    <div class="slideshow_container">
+                        <img class="slide" src="images/Lev Vygotsky.jpg" title="Lev Vygotsky"/>
+                    </div>
+                    <button class="sources-button" onclick="toggleSources(this.nextElementSibling)">Sources</button>
+                    <ol class="sources">
+                        <li><a href="https://www.psychologistworld.com/cognitive/learning/sociocultural-approach-vygotsky-zone-proximal-development#:~:text=The%20theory%20was%20developed%20by%20Lev"
+                            target="_blank">Sociocultural Approach | Psychologist World</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h2 class="name">Sociocultural Perspective</h2>
+                    <div class="description">
+                        <ul>
+                            <li>Lev Vygotsky founded the approach.</li>
+                            <li>The sociocultural approach looks at how a person's experiences, influences and culture help shape why they act the way they do.</li>
+                            <li>Views human development as a socially mediated process in which children acquire their cultural values, beliefs, and problem-solving strategies through collaborative dialogues with more knowledgeable members of society.</li>
+                            <li>The work of Lev Vygotsky has become the foundation of much research and theory in cognitive development over the past several decades, particularly of what has become known as sociocultural theory.</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div> 
+                    <h2 class="name">Behaviorism (modern)</h2>
+                    <div class="description">
+                        <ul>
+                            <li>Behaviorism was continued by B. F. Skinner with his theory of operant conditioning.</li>
+                            <li>Operant conditioning is a method of learning that occurs through rewards and punishments for behavior. Through operant conditioning, an individual makes an association between a particular behavior and a consequence. Operant conditioning is utilized in education.</li>
+                            <li>The likelihood of a behavior to happen is increased by reinforcements while punishments decrease them.</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="year">1938</h2>
+                    <div class="slideshow_container">            
+                        <img class="slide" src="images/B. F. Skinner.jpg" title="B. F. Skinner">
+                    </div>
+                    <button class="sources-button" onclick="toggleSources(this.nextElementSibling)">Sources</button>
+                    <ol class="sources">
+                        <li><a href="https://www.simplypsychology.org/operant-conditioning.html#:~:text=The%20behavior%20of%20organisms"
+                            target="_blank">B. F. Skinner | Operant Conditioning | Simply Psychology</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h2 class="year">1943</h2>
+                    <div class="slideshow_container">
+                        <img class="slide" src="images/Abraham Maslow.jpg" title="Abraham Maslow"/>
+                        <img class="slide" src="images/Carl Rogers.jpg" title="Carl Rogers"/>
+                    </div>
+                    <button class="sources-button" onclick="toggleSources(this.nextElementSibling)">Sources</button>
+                    <ol class="sources">
+                        <li><a href="https://www.simplypsychology.org/humanistic.html#:~:text=developed%20a%20hierarchical%20theory%20of%20human%20motivation"
+                            target="_blank">Humanistic Approach | Simply Psychology</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h2 class="name">Humanism</h2>
+                    <div class="description">
+                        <ul>
+                            <li>Founders include Abraham Maslow and Carl Rogers.</li>
+                            <li>It emphasizes the personal worth of the individual, the centrality of human values, and the creative, active nature of human beings. The approach is optimistic and focuses on the noble human capacity to overcome hardship, pain and despair.</li>
+                            <li>Holds that humans have free will. It rejects the behavioral and psychodynamic approach since both are characterized by determinism.</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div> 
+                    <h2 class="name">Biopsychology</h2>
+                    <div class="description">
+                        <ul>
+                            <li>The study of physiology and biological processes has played a significant role in psychology since its earliest beginnings. Charles Darwin first introduced the idea that evolution and genetics play a role in human behavior.</li>
+                            <li>In his studies of epilepsy, neuroscientist Wilder G. Penfield begins to uncover the relationship between chemical activity in the brain and psychological phenomena. His findings set the stage for widespread research on the biological role in psychological phenomena.</li>
+                            <li>Focuses on how the brain, neurotransmitters, and other aspects of our biology influence our behaviors, thoughts, and feelings.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="year">1954</h2>
+                    <div class="slideshow_container">            
+                        <img class="slide" src="images/Wilder Penfield.jpg" title="Wilder Penfield">
+                    </div>
+                    <button class="sources-button" onclick="toggleSources(this.nextElementSibling)">Sources</button>
+                    <ol class="sources">
+                        <li><a href="https://www.learner.org/wp-content/interactive/psychology/history/history_nonflash.html#:~:text=In%20his%20studies%20of%20epilepsy"
+                            target="_blank">The History of Psychology</a></li>
+                    </ol>
+                </div>
+                
+                <div>
+                    <h2 class="year">1976</h2>
+                    <div class="slideshow_container">
+                        <img class="slide" src="images/Richard Dawkins.jpg" title="Richard Dawkins"/>
+                    </div>
+                    <button class="sources-button" onclick="toggleSources(this.nextElementSibling)">Sources</button>
+                    <ol class="sources">
+                        <li><a href="https://www.learner.org/wp-content/interactive/psychology/history/history_nonflash.html#:~:text=The%20Selfish%20Gene"
+                            target="_blank">The History of Psychology</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h2 class="name">Evolutionary Perspective</h2>
+                    <div class="description">
+                        <ul>
+                            <li>Focuses on the biological bases for universal mental characteristics that all humans share.</li>
+                            <li>The mind is seen as a set of information-processing machines, designed by the same process of natural selection that Charles Darwin first theorized, allowing humans to solve problems faced in the early days of human evolution.</li>
+                            <li>Richard Dawkins publishes The Selfish Gene, which begins to popularize the idea of evolutionary psychology. This approach applies principles from evolutionary biology to the structure and function of the human brain. It offers new ways of looking at social phenomena such as aggression and sexual behavior.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <div id="terminal"></div>
+        <footer>
+            <a href="other_pages/quiz.html"  
+               target="popup" 
+               onclick="window.open('other_pages/quiz.html','popup','width=500,height=600,scrollbars=yes,resizable=yes'); return false;"
+               id="quiz-link">
+                Take Quiz
+            </a>
+            <p>&copy; 2020 Krzystof Emmanuel Autencio</p>
+        </footer>
+        <script>
+            let delaySeconds = 5, 
+                slideShowContainers = document.getElementsByClassName("slideshow_container");
+
+            function showAllSlidesAuto(slideShowContainer) {
+                let index = 0,
+                    slides = slideShowContainer.getElementsByClassName("slide"),
+                    timeoutObject;
+
+                function showSlides() {
+                    for(let slide of slides)
+                        slide.className = slide.className.replace(" visible", "");
+                        
+                    slides[index].className += " visible";
+                }
+
+                function showSlidesAuto() {
+                    showSlides();
+                    index = (index + 1) % slides.length;
+                    timeoutObject = setTimeout(showSlidesAuto, delaySeconds*1000);
+                }
+
+                showSlidesAuto();
+            }
+
+            for(let slideShowContainer of slideShowContainers) {
+                showAllSlidesAuto(slideShowContainer);
+            }
+
+            function toggleSources(sources) {
+                if(sources.className.includes("show"))
+                    sources.className = sources.className.replace(" show", "");
+                else
+                    sources.className += " show";
+            }
+            
+        </script>
+    </body>
+</html>
